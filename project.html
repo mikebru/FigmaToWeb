@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style-project.css" />
+  </head>
+  <body>
+    <div class="element-project-page">
+      <div id="nav-holder">  </div>
+      <div class="project-description">
+        <div class="body-text">
+          <div class="text">
+            <div class="title">Simply Sand Play</div>
+            <div class="colored-text-wrapper">
+              <div class="colored-text">
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-gallery">
+        <div class="text-wrapper-4">Image Gallery</div>
+        <div class="work-cards">
+          <div class="stripe">
+            <div class="work-card">
+              <img class="image" src="img/image-6.png" />
+              <div class="headline-subhead">
+                <div class="project-title">Free Bird</div>
+                <div class="UI-art-drection">Lynyrd Skynyrd</div>
+              </div>
+            </div>
+            <div class="work-card">
+              <img class="image" src="img/image-5.png" />
+              <div class="headline-subhead">
+                <div class="project-title">Purple Haze</div>
+                <div class="UI-art-drection">Jimi Hendrix</div>
+              </div>
+            </div>
+            <div class="work-card">
+              <img class="image" src="img/image-4.png" />
+              <div class="headline-subhead">
+                <div class="project-title">You Really Got Me</div>
+                <div class="UI-art-drection">The Kinks</div>
+              </div>
+            </div>
+          </div>
+          <div class="stripe">
+            <div class="work-card">
+              <img class="image" src="img/image-3.png" />
+              <div class="headline-subhead">
+                <div class="project-title">American Girl</div>
+                <div class="UI-art-drection">Tom Petty</div>
+              </div>
+            </div>
+            <div class="work-card">
+              <img class="image" src="img/image-2.png" />
+              <div class="headline-subhead">
+                <div class="project-title">Whole Lotta Love</div>
+                <div class="UI-art-drection">Led Zeppelin</div>
+              </div>
+            </div>
+            <div class="work-card">
+              <img class="image" src="img/image-1.png" />
+              <div class="headline-subhead">
+                <div class="project-title">Under Pressure</div>
+                <div class="UI-art-drection">Queen</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("nav.html", function(data){
+    $("#nav-holder").replaceWith(data);
+});
+</script>

@@ -7,30 +7,15 @@
   </head>
   <body>
     <div class="element-portfolio">
-      <div class="navigation">
-        <div class="nav-nav-menu">
-          <div class="text-wrapper">About</div>
-          <a
-            href="https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-portfolio22&utm_medium=figma-samples"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="div">Work</div></a
-          >
-          <a
-            href="https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-portfolio22&utm_medium=figma-samples"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="text-wrapper-2">Contact</div></a
-          >
-        </div>
-        <div class="logo"><div class="text-wrapper-3">Logo</div></div>
-      </div>
+
+      <div id="nav-holder">  </div>
+
       <div class="header">
         <div class="header-2">
           <div class="div-2">
             <div class="div-2">
-              <div class="text-wrapper-4">Branding | Image making</div>
-              <div class="text-wrapper-5">My awesome portfolio</div>
+              <div class="text-wrapper-4">Designer</div>
+              <div class="text-wrapper-5">Michael’s Portfolio</div>
             </div>
             <p class="and-i-made-it-myself">And I made it myself! Yes. In Figma with Anima</p>
           </div>
@@ -239,3 +224,10 @@
     </div>
   </body>
 </html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("nav.html", function(data){
+    $("#nav-holder").replaceWith(data);
+});
+</script>
